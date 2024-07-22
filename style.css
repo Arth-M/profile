@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Responsive page - beginning */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 180px;
+  }
+}
+
+/* Generic design */
+body {
+    background-color: rgba(215, 222, 220, 0.5);
+    font-family: "Raleway", sans-serif;
+    color: rgb(15, 17, 8);
+    font-size: 16px;
+    line-height: 16px;
+}
+
+h1, h2 {
+  color: rgb(13, 89, 130);
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  background-color: rgb(20, 129, 186);
+}
+
+a:hover {
+  background-color:rgb(252, 129, 74);
+  transition: 0.3s ease;
+}
+
+/* Class : Specific design */
+.container {
+  text-align: center;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.card {
+  background: rgba(245, 245, 245, 0.3);
+  padding: 30px;
+  width: 400px;
+  margin: 30px auto;
+  border-radius: 4px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow: 0 15px 35px rgba(89, 89, 30, 0.1);
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.text-white{
+  color: rgb(250, 250, 250);
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+/* ids and descendant selectors : fine tuning */
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline > li > a {
+  background-color: rgba(245, 245, 245, 0.3);
+  color: rgb(20, 129, 186);
+  font-size: 30px;
+}
+
+.list-inline > li > a:hover {
+  color: rgb(252, 129, 74);
+}
+
+#text-bottom-padding {
+  padding-bottom: 15px;
+}
